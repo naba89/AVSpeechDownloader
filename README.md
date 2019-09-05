@@ -1,5 +1,11 @@
 # AVSpeechDownloader
-Simple python script for downloading AVSpeech Dataset
+Simple python script for downloading AVSpeech Dataset. 
+
+It downloads only the relevant part of the video and saves it in a mp4 container.
+
+Tries to download 720p/360p videos with 25fps and audio at 44.1kHz. 
+
+Files names are <yt_id>\_<start_time>\_<end_time>.mp4
 
 Assumptions/Limitations: 
   - `avspeech_train.csv` and `avspeech_test.csv` are in the same directory as the download.py script.

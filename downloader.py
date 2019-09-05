@@ -30,7 +30,7 @@ def download(vidinfo):
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             download_url = ydl.extract_info(url=yt_url, download=False)['url']
     except:
-        return_msg = '{}, ERROR!'.format(vidinfo.yt_id)
+        return_msg = '{}, ERROR (youtube)!'.format(vidinfo.yt_id)
         return return_msg
     try:
         (
@@ -45,7 +45,7 @@ def download(vidinfo):
 
         )
     except:
-        return_msg = '{}, ERROR!'.format(vidinfo.yt_id)
+        return_msg = '{}, ERROR (ffmpeg)!'.format(vidinfo.yt_id)
         return return_msg
 
     return '{}, DONE!'.format(vidinfo.yt_id)

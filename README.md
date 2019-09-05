@@ -1,10 +1,16 @@
 # AVSpeechDownloader
 Simple python script for downloading AVSpeech Dataset
 
+Assumptions/Limitations: 
+  - avspeech_train.csv and avspeech_test.csv are in the same directory as the download.py script.
+  - creates the output folder in the currect directory based on the train/test set. For now you have to change the directories in the code if required.
+  
 Usage:
   ```
-  python downloader.py <train/test>
+  python downloader.py train
   ```
+Replace train with test if you want to download the test set.
+
 Dependencies:
 ```
   conda install -c conda-forge ffmpeg
@@ -13,4 +19,6 @@ Dependencies:
 ```
 NOTE:
 
-  This is a very simple script. I haven't take too much care, just wrote it quickly to download the dataset. Let me know if you have any problems using it, will try to fix it.
+  This is a very simple script. I haven't take too much care, just wrote it quickly to download the dataset. Let me know if you have any problems using it, will try to fix it. Feel free to send in pull requests if you would like to improve it.
+  
+  Cheers!

@@ -2,8 +2,9 @@
 Simple python script for downloading AVSpeech Dataset
 
 Assumptions/Limitations: 
-  - avspeech_train.csv and avspeech_test.csv are in the same directory as the download.py script.
+  - `avspeech_train.csv` and `avspeech_test.csv` are in the same directory as the download.py script.
   - creates the output folder in the currect directory based on the train/test set. For now you have to change the directories in the code if required.
+  - the script creates a file called `badfiles_train.txt` which lists the youtube id's of the deleted/private videos which are no longer available for download.
   
 Usage:
   ```

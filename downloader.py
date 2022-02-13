@@ -2,7 +2,7 @@ import sys
 import os
 from multiprocessing.pool import ThreadPool
 
-import youtube_dl
+from yt_dlp import YoutubeDL
 import ffmpeg
 
 
@@ -27,7 +27,7 @@ def download(vidinfo):
         'no_warnings': True,
     }
     try:
-        with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+        with YoutubeDL(ydl_opts) as ydl:
             download_url = ydl.extract_info(url=yt_url, download=False)['url']
     except:
         return_msg = '{}, ERROR (youtube)!'.format(vidinfo.yt_id)

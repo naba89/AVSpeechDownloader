@@ -21,7 +21,7 @@ Replace train with test if you want to download the test set.
 Dependencies:
 ```
   conda install -c conda-forge ffmpeg
-  conda install -c conda-forge youtube-dl
+  pip install -U yt-dlp
   pip install ffmpeg-python
 ```
 NOTE:
